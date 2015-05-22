@@ -518,6 +518,7 @@ INPUT:focus, TEXTAREA:focus, BUTTON:focus {
 
 .floating_nav {
   position: absolute;
+  z-index: 99;
 }
 
 .floating_nav_item {
@@ -591,6 +592,7 @@ INPUT:focus, TEXTAREA:focus, BUTTON:focus {
   height: 60px;
   background: #2f363d;
   cursor: pointer;
+  z-index: 99;
 }
 
 .scroll_btn:hover {
