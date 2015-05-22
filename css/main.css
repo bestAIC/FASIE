@@ -89,7 +89,7 @@
 /* Elements */
 * {margin:0; padding:0;}
 HTML {height:100%;}
-BODY {height:100%; background:#fff; color:#000; font:14px Arial, sans-serif;}
+BODY {height:100%; background:#fff; color:#000; font:14px Arial, sans-serif; min-width: 1000px;}
 TABLE {border-spacing:0; border-collapse:collapse;}
 TD,TH {vertical-align:top; text-align:left;}
 IMG,FIELDSET {border:none;}
