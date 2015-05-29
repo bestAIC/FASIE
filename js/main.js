@@ -33,7 +33,25 @@ function HideShow() {
 
   $('.b-header_user').click(function(){
     $('.b-header_user-settings').fadeToggle();
-  });    
+  }); 
+
+  $('.menu_btn').click(function(){
+    $(this).toggleClass('open');
+    $('.header_menu_cover').slideToggle();
+  });
+
+  $(window).resize(function(){
+    var bodyW = $('body').width();
+    if(bodyW>1080){
+      $('.header_menu_cover').show();
+    } else {
+      if ($('.menu_btn').hasClass('open')){
+        $('.header_menu_cover').show();
+      } else {
+        $('.header_menu_cover').hide();
+      }
+    }
+  }).resize();      
  
 }
 
