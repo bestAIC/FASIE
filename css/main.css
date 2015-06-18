@@ -263,6 +263,25 @@ INPUT:focus, TEXTAREA:focus, BUTTON:focus {
   border-color: transparent;
 }
 
+.bredcrumbs {
+  padding-top: 20px;
+}
+
+.bredcrumbs A,
+.bredcrumbs SPAN {
+  color: #56585a;
+  font-family: "DINProMedium";
+  display: inline-block;
+  vertical-align: top;
+  line-height: 14px;
+  height: 14px;
+  margin-right: 5px;
+}
+
+.bredcrumbs .home {
+  width: 12px;
+  background: url("../img/home_ico.png") no-repeat 50% 50%;
+}
 
 /* Header end */
 
@@ -1379,6 +1398,144 @@ TEXTAREA {
 
 /* Contacts page end */
 
+/* Press page */
+.news_blocks.m_gallery {
+  background: #fff;
+}
+
+.news_blocks.m_gallery .tile_blocks {
+  padding-top: 20px;
+}
+
+.tile_block_x2.success {
+  padding: 20px;
+  color: #fff;
+  float: none;
+}
+
+.tile_block_x2.success P {
+  opacity: 1;
+}
+
+.tile_block_x2.success A {
+  color: #fff;
+}
+
+B.rec {
+  display: block;
+  position: relative;
+  top:-2px;
+  text-decoration: underline;
+  margin:0 0 13px 20px;
+  cursor: pointer;
+}
+
+B.rec:before {
+  display: block;
+  content:'';
+  width: 10px;
+  height: 10px;
+  background: #ee3232;
+  position: absolute;
+  top:50%;
+  margin-top: -5px;
+  left:-20px; 
+}
+
+.tile_block_x1.photo {
+  color:#fff;
+}
+
+.tile_block_x1.photo A {
+  color:#fff;
+}
+
+.tile_block_x1.photo P {
+  opacity: 1;
+}
+
+.tile_block_x4.for_press {
+  border: 3px solid #bac4cd;
+  margin-top: -240px;
+}
+
+.tile_block_x4.for_press,
+.tile_block_x4.for_press H2 A {
+  color: #000;
+}
+
+.tile_block_x4.for_press P {
+  position: static;
+  opacity: 1;
+  font-size: 16px;
+  font-family: "heliosregular";
+  margin-bottom: 0.5em;
+}
+
+.tile_block_x4.for_press H3 {
+  text-transform: none;
+  margin-bottom: 1em;
+}
+
+.tile_block_x4 DL {
+  margin-top: 10px;
+}
+
+.tile_block_x4 DT {
+  width: 110px;
+  height: 70px;
+  padding:20px 15px;
+  position: absolute;
+  background: #ebebeb;
+}
+
+.tile_block_x4 DT IMG {
+  width: 100%;
+  height: auto;
+}
+
+.tile_block_x4 DD {
+  min-height: 90px;
+  padding:0 0 20px 130px; 
+}
+
+.tile_block_x4 DD H2 {
+  line-height: 1em;
+  margin-bottom: 0.2em; 
+}
+
+.tags_title {
+  padding: 25px 0 15px 0;
+}
+
+.tags LI {
+  display: inline-block;
+  vertical-align: top;
+  padding:10px;
+  color: #fff;
+  font-family: "DINProMedium";
+  text-transform: uppercase;
+  background: #acb6bf;
+  margin: 0 10px 10px 0; 
+  cursor: pointer;
+}
+
+.tile_block_x2.fund_news {
+  padding: 20px;
+}
+
+.industry_news_colored H5 A,
+.industry_news_colored P {
+  color: #fff;
+}
+
+.industry_news_colored .ico_clock.right:after {
+  background:url("../img/sprite_cloсk.png") no-repeat 0px -36px;
+}
+
+
+/* Press page end */
+
 
 
 /****************************** MOBILE 640 ******************************/
@@ -1573,6 +1730,35 @@ TEXTAREA {
   }
 
   /* Contacts page end */
+
+  /* Press page */
+  .tile_block_x4.for_press {
+    margin-top:0px;
+  }
+
+  .news_blocks.m_gallery .tile_blocks {
+    padding-top:0px;
+  }
+
+  .bredcrumbs A, 
+  .bredcrumbs SPAN {
+    text-transform: uppercase;
+    font-family: "heliosbold";
+  }
+
+  .bredcrumbs .divider {
+    display: none;
+  }
+
+  .tile_block_x2.mobile_custom_less {
+    width: 270px;
+  }
+
+  .tile_block_x1.mobile_custom_more {
+    width: 560px;
+  }
+
+  /* Press page end */
 
 }
 
@@ -1808,5 +1994,32 @@ TEXTAREA {
 
   /* Contacts page end */
 
+  /* Press page end */
+
+  .tile_block_x2.mobile_custom_less,
+  .tile_block_x1.mobile_custom_more,
+  .tile_block_x2.success {
+    width: 280px;
+    height: auto;
+    min-height: 220px;
+    padding: 20px 20px 60px;
+  }
+
+  .tile_block_x4.for_press {
+    height: auto;
+    min-height: 220px;
+    padding-bottom:0; 
+  }
+
+  .tile_block_x4 DT {
+    display: none;
+  }
+
+  .tile_block_x4 DD {
+    min-height: 90px;
+    padding: 0 0 20px 0;
+  }
+
+  /* Press page end */
 
 }

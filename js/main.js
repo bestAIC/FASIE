@@ -69,21 +69,30 @@ function HideShow() {
 
 // Menu 
 function MenuMove() {
-  if ($(window).scrollTop() < 1450 ) {
-    $(".floating_nav").css({
-      position: 'absolute',
-      top: 'auto'
-    });
-  } else if ($(window).scrollTop() < 2380) {
-    $(".floating_nav").css({
-      position: 'fixed',
-      top: 0
-    });
-  } else if ($(window).scrollTop() > 2380) {
-    $(".floating_nav").css({
-      position: 'absolute',
-      top: '920px'
-    });
+
+  if($('.float_point').length || $('.scroll_btn').length){
+    var startBlock = $('.float_point').offset().top;
+    var endBlock = ($('.scroll_btn').offset().top)-($('.floating_nav').height());
+
+    if ($(window).scrollTop() < startBlock ) {
+      $(".floating_nav").css({
+        position: 'absolute',
+        top: 'auto',
+        bottom: 'auto'
+      });
+    } else if ($(window).scrollTop() < endBlock) {
+      $(".floating_nav").css({
+        position: 'fixed',
+        top: 0,
+        bottom: 'auto'
+      });
+    } else if ($(window).scrollTop() > endBlock) {
+      $(".floating_nav").css({
+        position: 'absolute',
+        top: 'auto',
+        bottom: '100px'
+      });
+    }
   }
 } 
 
