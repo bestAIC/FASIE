@@ -191,7 +191,7 @@ INPUT:focus, TEXTAREA:focus, BUTTON:focus {
 }
 
 .header_menu {
-  margin: 30px 0 0 25px;
+  margin: 30px 0 0 24px;
   display: inline-block;
   vertical-align: top;
 }
@@ -538,6 +538,14 @@ INPUT:focus, TEXTAREA:focus, BUTTON:focus {
 
 .btn:hover {
   background: #46b6e5;
+}
+
+.btn.gray {
+  background: #bac4cd;
+}
+
+.btn.gray:hover {
+  background: #d1dae2;
 }
 
 .btn.big {
@@ -1355,7 +1363,7 @@ DL.accordeon {
   float: right;
 }
 
-INPUT {
+INPUT[type="text"] {
   height: 60px;
   line-height: 60px;
   padding: 0 15px;
@@ -1533,8 +1541,187 @@ B.rec:before {
   background:url("../img/sprite_cloсk.png") no-repeat 0px -36px;
 }
 
-
 /* Press page end */
+
+/* Story page */
+.filtering {
+  width: 940px;
+  box-sizing: border-box;
+  border: 3px solid #bac4cd;
+  padding: 20px; 
+  margin-top: 20px; 
+}
+
+.btns {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  z-index: 9;
+}
+
+.btns .btn {
+  width: 160px;
+  margin-bottom: 10px;
+}
+
+.btns I {
+  display: block;
+}
+
+.filter_row {
+  font-family: 'heliosbold';
+}
+
+.filter_row DT {
+  position: absolute;
+  top: 0px;
+  width: 160px;
+}
+
+.filter_row DD {
+  width: 900px;
+  padding: 0 0 0.8em 160px;
+}
+
+.filter_row LABEL {
+  text-transform: uppercase;
+  display: inline-block;
+  margin:0px 1em 0.8em 0px; 
+}
+
+.filter_row SELECT {
+  width: 360px;
+  line-height: 25px;
+  height: 25px; 
+}
+
+.story .news_blocks {
+  background: #fff;
+}
+
+.story .news_blocks H4 {
+  font-family: 'heliosbold';
+  font-size: 16px;
+}
+
+.tile_blocks .block_tag {
+  display: inline-block;
+  text-decoration: underline;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+
+.tile_blocks .top {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  padding: 20px 20px 0px 20px;
+}
+
+.tile_blocks .bottom {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  padding: 0px 20px 20px 20px;
+}
+
+.tile_blocks .bottom P {
+  position: relative;
+  font-size: 16px;
+  opacity: 1;
+}
+
+.tile_blocks .bottom H4 {
+  margin-bottom: 2em;
+}
+
+.tile_blocks .bottom LI {
+  margin-bottom: 0.3em;
+}
+
+.tile_blocks .bottom B {
+  text-transform: uppercase;
+}
+
+.tile_block_x8 .top,
+.tile_block_x8 .bottom {
+  width: 50%;
+}
+
+.tile_block_x8 .pattern {
+  position: absolute;
+  left:0px;
+  top:0px; 
+  width: 100%;
+  height: 100%;
+  background: -moz-linear-gradient(left,  rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 80%); 
+  background: -webkit-linear-gradient(left,  rgba(255,255,255,0.9) 0%,rgba(255,255,255,0) 80%);
+  background: linear-gradient(to right,  rgba(255,255,255,0.9) 0%,rgba(255,255,255,0) 80%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+}
+
+.tile_block_x8 {
+  display: block;
+  float: left;
+  vertical-align: top;
+  width: 940px;
+  height: 460px;
+  margin: 0px 10px 20px 10px;
+  padding:20px; 
+  border: 1px solid #bac4cd
+}
+
+.story .tile_block_x8 {
+  height: 370px; 
+  border: none;
+  border-left:6px solid;
+}
+
+.story .tile_block_x4 {
+  height: 370px;
+  color: inherit;
+  border: none;
+  border-left:6px solid;
+}
+
+.tile_block_x4 .pattern {
+  position: absolute;
+  left:0px;
+  top:0px; 
+  width: 100%;
+  height: 100%;
+  background: repeat 0px 0px; 
+  background-color: rgba(255,255,255,0.7);
+  background-image:url("../img/pattern_photo_line.png"); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); 
+}
+
+.story .block_colored {
+  color: #fff;
+}
+
+.more_btn {
+  width: 100%;
+  border: 3px solid #bac4cd;
+  padding: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'DINProBold';
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.more_btn .count {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 14px;
+  text-transform: none;
+}
+
+/* Story page end */
 
 
 
@@ -1600,6 +1787,11 @@ B.rec:before {
   .header_menu .active:after {
     display: none;
   }
+
+  .bredcrumbs .home {
+    position: relative;
+    top: -2px;
+  }  
 
   /* Header end */
   /* Footer */
@@ -1759,6 +1951,58 @@ B.rec:before {
   }
 
   /* Press page end */
+
+  /* Story page */
+  .filtering {
+    width: 560px;
+    margin-top: 0px;
+  }
+
+  .btns {
+    position: relative;
+    right: auto;
+    margin-top: 20px;
+  }
+
+  .btns I {
+    display: inline;
+    margin-right: 10px;
+  }
+
+  .btns .btn {
+    width: 145px;
+    margin-bottom: -10px;
+  }
+
+  .filter_row DD {
+    width: 520px;
+    padding: 0 0 0.8em 160px;
+  }
+
+  .filter_row SELECT {
+    width: 350px; 
+  }
+
+  .tile_block_x8 .top,
+  .tile_block_x8 .bottom {
+    width: 100%;
+  }
+
+  .tile_block_x8 .pattern {
+    background: repeat 0px 0px; 
+    background-color: rgba(255,255,255,0.7);
+    background-image:url("../img/pattern_photo_line.png");
+  }
+
+  .tile_block_x8 {
+    width: 560px;
+  }
+
+  .more_btn {
+    margin: -20px 0 20px 0;
+  }
+
+  /* Story page end */  
 
 }
 
@@ -2021,5 +2265,89 @@ B.rec:before {
   }
 
   /* Press page end */
+
+
+  /* Story page */
+  .filtering {
+    width: 280px;
+  }
+
+  .btns {
+    position: relative;
+    right: auto;
+    margin: 20px 0 -10px 0;
+  }
+
+  .btns .btn {
+    margin-bottom: 0px;
+    width: 235px;
+  }
+
+  .pattern {
+    display: none;
+  }
+
+  .filter_row DT {
+    position: relative;
+    width: auto;
+    padding: 0 0 0.8em 0;
+  }
+
+  .filter_row DD {
+    width: auto;
+    padding: 0 0 0.8em 0;
+  }
+
+  .filter_row LABEL {
+    display: block;
+  }
+
+  .filter_row SELECT {
+    width: 235px; 
+  }
+
+  .tile_blocks .top {
+    padding: 0 0 2em 0;
+    position: relative;
+  }
+
+  .tile_blocks .bottom {
+    padding: 0;
+    position: relative;
+  }  
+
+  .story .tile_block_x8,
+  .story .tile_block_x4 {
+    padding-top: 0px;
+    border-width: 3px;
+    height: auto;
+    background: none!important;
+  }
+
+  .story .tile_block_x8:before,
+  .story .tile_block_x4:before {
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 60%;
+    bottom: 0px;
+    left: -4px;
+    background: #fff;
+  }  
+
+  .story .block_colored {
+    color: #000;
+  }
+
+  .tile_block_x8 {
+    width: 280px;
+  }
+
+  .more_btn {
+    font-size: 21px;
+  }
+
+  /* Story page end */ 
+
 
 }

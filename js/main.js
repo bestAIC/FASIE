@@ -49,7 +49,7 @@ function HideShow() {
     $(this).addClass('selected');
     $('.accordeon dd').slideUp();
     $(this).next('dd').slideDown();
-  });
+  }); 
 
   $(window).resize(function(){
     var bodyW = $('body').width();
