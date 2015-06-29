@@ -109,6 +109,12 @@ function CustomMap() {
     mapTypeId: google.maps.MapTypeId.ROADMAP
   }
   var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({
+      map: map,
+      icon: 'img/map_pin.png',
+      position: new google.maps.LatLng(55.7423000,37.6046000)
+  }); 
+
 } 
 
    
